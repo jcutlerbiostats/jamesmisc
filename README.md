@@ -1,15 +1,26 @@
 
 
-# Miscellaneous Functions
+# jamesmisc: Miscellaneous Functions
 
-Welcome friends! This is the homepage for my R package of a handful of
-miscellaneous functions.
+Welcome friends! This is the homepage for `jamesmisc`, my R package of a
+handful of miscellaneous functions.
 
 Hopefully some of these functions will be useful to you as well.
 
-It includes `annuity_n_rates()`, which can calculate and display growth
-curves of an investment (say, a retirement plan), with fixed annual
-contributions, at different annual rates of growth:
+## Installation
+
+You can install the development version of jamesmisc from GitHub with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("jcutlerbiostats/jamesmisc")
+```
+
+## Usage
+
+`jamesmisc` includes `annuity_n_rates()`, which can calculate and
+display growth curves of an investment (say, a retirement plan), with
+fixed annual contributions, at different annual rates of growth:
 
 ``` r
 library(jamesmisc)
@@ -29,7 +40,7 @@ is visible in the function reference page!
 list_data_and_plot[[1]]
 ```
 
-![](README_files/figure-commonmark/unnamed-chunk-2-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
 It includes `binomial_dist()` if you want to compute and visualize the
 probability of any event in a binomial experiment. For example,
@@ -50,7 +61,7 @@ binomial_dist(
 ) 
 ```
 
-![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 Or,
 
@@ -67,7 +78,7 @@ function reference page.)
 binomial_dist(55,.05,0,"left")
 ```
 
-![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
 
 It includes `check_normality()` if you want to quickly assess normality
 of a variable with a qq-plot, a Shapiro-Wilk test of normality, and also
@@ -81,9 +92,9 @@ curve super-imposed:
 check_normality(ChickWeight,"weight")
 ```
 
-![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-6-1.png)
 
-![](README_files/figure-commonmark/unnamed-chunk-5-2.png)
+![](README_files/figure-commonmark/unnamed-chunk-6-2.png)
 
 
         Shapiro-Wilk normality test
@@ -141,7 +152,7 @@ plot_logistic_results(
     Scale for x is already present.
     Adding another scale for x, which will replace the existing scale.
 
-![](README_files/figure-commonmark/unnamed-chunk-6-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-7-1.png)
 
 There’s `strat_proportion_plot()`, which is for plotting the counts and
 percentages of a categorical variable stratified by another categorical
@@ -160,7 +171,7 @@ strat_proportion_plot(
 )
 ```
 
-![](README_files/figure-commonmark/unnamed-chunk-7-1.png)
+![](README_files/figure-commonmark/unnamed-chunk-8-1.png)
 
 And there’s a function, `taxes()`, for getting a sense of what your net
 income should be, given a gross income. It calculates your federal and
