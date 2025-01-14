@@ -1,0 +1,31 @@
+Package: jamesmisc
+Title: A Package of Miscellaneous Functions for Analytics and Probability
+Version: 0.0.0.9000
+Authors@R: 
+    person("James", "Cutler", , "jcutler79@gmail.com", role = c("aut", "cre"))
+Description: Miscellaneous functions: binomial_dist for visualizing the distribution of a binomial random variable (helpful for probability questions). Also, a simple function for removing pure-NA columns in a tibble. A function for plotting proportions with CI's, stratified by another categorical variable. Another for returning the results of three methods for assessing normality. Another for calculating taxes using gross income. Some compound interest functions. A function for plotting odds ratios and CI. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+  checkmate,
+  ggplot2,
+  dplyr,
+  tidyr,
+  stringr,
+  tibble,
+  rlang,
+  magrittr,
+  scales,
+  glue,
+  plotly,
+  freqtables,
+  broom,
+  car
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
